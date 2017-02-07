@@ -1,0 +1,3 @@
+gll_iem_v05_rev1 : 97.737297
+iso_source_v05_rev1 : 36.102965
+PS7 - NP3 : 30.863924

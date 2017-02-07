@@ -1,0 +1,21 @@
+#!/bin/sh
+
+#if [ $# -lt 2 ]
+#then	
+#	echo -e "Error: Not enough input arguments. Syntax:\n	./deletePhotonRows <lat_file> <photonDeleteFile>"
+#	exit -1
+#fi
+
+cp -v lat_final_100GeV.fits lat_MOD_final_100GeV.fits
+
+
+filename='lat_MOD_final_100GeV.fits'
+photonRowFile='photonRowsToDelete_tevcat_2deg.txt'
+
+while read line           
+do           
+	fdelrow $filename+1 $line 1 Y Y        
+done <$photonRowFile
+
+gtbin algorithm=CMAP evfile=lat_MOD_final_100GeV.fits outfile=lat_MOD_binned3600_100GeV.fits scfile=~/fermidata/spacecraft/spacecraft.fits nxpix=3600 nypix=3600 binsz=0.1 xref=0 yref=0 axisrot=0 proj=AIT coordsys=GAL
+

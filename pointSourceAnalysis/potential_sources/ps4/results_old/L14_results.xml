@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<source_library title="source library">
+  <source name="_2FGLJ0543.9-5532" type="PointSource">
+    <spectrum type="PowerLaw">
+      <parameter error="1.095129452" free="1" max="10000" min="0.0001" name="Prefactor" scale="1e-13" value="0.2059270225" />
+      <parameter error="1.261518984" free="1" max="5" min="0" name="Index" scale="-1" value="1.398850983" />
+      <parameter free="0" max="500000" min="30" name="Scale" scale="1" value="3006.359619" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter free="0" max="360" min="-360" name="RA" scale="1" value="85.9921" />
+      <parameter free="0" max="90" min="-90" name="DEC" scale="1" value="-55.5337" />
+    </spatialModel>
+  </source>
+</source_library>

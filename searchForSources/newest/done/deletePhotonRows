@@ -1,0 +1,24 @@
+#!/bin/sh
+
+fitsFile='lat_final_100-500GeV.fits'
+
+for i in photonRowsToDelete_100*
+do
+	photonRowFile=$i
+
+	modType=${photonRowFile:19:-4}
+	modFile='lat_MOD_final_'$modType'.fits'
+
+	cp -v $fitsFile $modFile
+
+	while read line           
+	do           
+		fdelrow $modFile+1 $line 1 Y Y        
+	done <$photonRowFile
+
+	outfile='lat_MOD_binned3600_'$modType'.fits'
+
+	gtbin algorithm=CMAP evfile=$modFile outfile=$outfile scfile=spacecraft.fits nxpix=3600 nypix=3600 binsz=0.1 xref=0 yref=0 axisrot=0 proj=AIT coordsys=GAL
+done
+
+echo 'All Done!!!!!'

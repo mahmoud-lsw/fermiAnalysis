@@ -1,0 +1,110 @@
+# N.B Before running, make sure:
+# 	- all photon files are in a folder called 'photon'
+#	- the spacecraft file is named 'spacecraft.fits' and is in a folder called 'spacecraft'
+#	You have these 4 files in a folder called model:
+#		i) gll_iem_v05.fits
+#		ii) gll_iem_v05_rev1.fit
+#		iii) gll_psc_v08.fit
+#		iv) iso_source_v05_rev1.txt
+
+
+import gt_apps as my_apps
+import os
+bashCommand = "ls -1 ./photon/*.fits > filelist.list"
+os.system(bashCommand)
+spacecraftFile='./spacecraft/spacecraft.fits'
+###### Adjustable paramaters #######
+minE=100
+maxE=100000
+irfsType='P7REP_SOURCE_V15'			# or 'P7REP_SOURCE_V15' ?
+##### Naming stuff #####
+file = open('filelist.list', 'r')
+name_temp=file.readline()
+file.close()
+name_type= name_temp[9:12]				# Usually LAT
+name_energy=str(int(maxE/1000))+'GeV'			# i.e 100GeV
+
+gtselectOutfile=name_type+'_allphotondata_'+name_energy+'.fits'
+finalLATFile = name_type+'_final_'+name_energy+'.fits'
+expCubeFile=name_type+'_expCube_'+name_energy+'.fits'
+expMapFile=name_type+'_expMap_+'+irfsType+'+_'+name_energy+'.fits'
+
+modelFile=name_type+'_model.xml'
+########################
+
+# Start analysis
+
+#Run gtselect
+my_apps.filter['evclass'] = 2
+my_apps.filter['ra'] = 350.9544
+my_apps.filter['dec'] = 42.2
+my_apps.filter['rad'] = 15
+my_apps.filter['emin'] = minE
+my_apps.filter['emax'] = maxE
+my_apps.filter['zmax'] = 100
+my_apps.filter['tmin'] = 239557417
+my_apps.filter['tmax'] = 'INDEF'
+my_apps.filter['infile'] = '@filelist.list'
+my_apps.filter['outfile'] = gtselectOutfile
+my_apps.filter.run()
+
+#Run gtmktime
+my_apps.maketime['scfile'] = spacecraftFile
+my_apps.maketime['filter'] = '(DATA_QUAL>0)&&(LAT_CONFIG==1)'
+my_apps.maketime['roicut'] = 'yes'
+my_apps.maketime['evfile'] = gtselectOutfile
+my_apps.maketime['outfile'] = finalLATFile
+my_apps.maketime.run()
+
+# Make livetime cube
+my_apps.expCube['evfile'] = finalLATFile
+my_apps.expCube['scfile'] = spacecraftFile
+my_apps.expCube['outfile'] = expCubeFile
+my_apps.expCube['dcostheta'] = 0.025
+my_apps.expCube['binsz'] = 1
+my_apps.expCube.run()
+
+# Make an exposure map
+my_apps.expMap['evfile'] = finalLATFile
+my_apps.expMap['scfile'] =spacecraftFile
+my_apps.expMap['expcube'] =expCubeFile
+my_apps.expCube['outfile'] = expCubeFile
+my_apps.expMap['outfile'] =expMapFile
+my_apps.expMap['irfs'] =irfsType
+my_apps.expMap['srcrad'] =20
+my_apps.expMap['nlong'] =120
+my_apps.expMap['nlat'] =120
+my_apps.expMap['nenergies'] =20
+my_apps.expMap.run()
+
+# Generate XML Model File
+from make2FGLxml import *
+mymodel = srcList('model/gll_psc_v08.fit',finalLATFile,modelFile)
+mymodel.makeModel('model/gll_iem_v05_rev1.fit', 'gll_iem_v05_rev1', 'model/iso_source_v05_rev1.txt', 'iso_source_v05_rev1')
+
+# There should now be a modelFile with a name SIMILAR to LAT_modelFile.xml
+
+# Run the Likelihood Analysis
+import pyLikelihood
+from UnbinnedAnalysis import *
+obs = UnbinnedObs(finalLATFile,spacecraftFile,expMap=expMapFile,expCube=expCubeFile,irfs=irfsType)
+like = UnbinnedAnalysis(obs,modelFile,optimizer='NewMinuit')
+
+# Analysis Complete
+print "################ Analysis Complete ################"
+print obs
+print like1
+print "###################################################"
+
+# Some plots!
+
+like.tol
+like.tolType
+like.tol = 0.0001
+likeobj = pyLike.NewMinuit(like.logLike)
+like.fit(verbosity=0,covar=True,optObject=like2obj)
+like.model['_2FGLJ1555.7+1111']
+like.plot()
+# Now, check if NewMinuit converged.
+print "###################################################"
+print likeobj.getRetCode()

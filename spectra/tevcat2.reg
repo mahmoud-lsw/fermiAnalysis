@@ -1,0 +1,6 @@
+global color=yellow
+fk5;point(20:09:27.0, -48:49:52)# point=cross text={TeV J2009-488}
+fk5;point(23:59:09.42, -30:37:22.7)# point=cross text={TeV J2359-306}
+fk5;point(12:56:11.1, -05:47:22)# point=cross text={TeV J1256-057}
+fk5;point(05:34:31.94, +22:00:52.2)# point=cross text={Crab}
+fk5;point(05:34:31.94, +22:00:52.2)# point=cross text={Crab1}

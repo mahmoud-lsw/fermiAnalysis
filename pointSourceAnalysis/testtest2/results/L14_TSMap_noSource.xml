@@ -1,0 +1,339 @@
+<?xml version= ?>
+<source_library title=>
+
+<!-- Point Sources -->
+
+<!-- Sources between [0.0,3.0) degrees of ROI center -->
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 2.45183873029 degrees away from ROI center -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 1.81791378044 degrees away from ROI center -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 0.012526697251 degrees away from ROI center -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+
+<!-- Sources between [3.0,6.0) degrees of ROI center -->
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 5.08308790763 degrees away from ROI center -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 3.70329718165 degrees away from ROI center -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 4.12027141315 degrees away from ROI center -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 5.8853714572 degrees away from ROI center -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 5.43879149895 degrees away from ROI center -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 3.23745185478 degrees away from ROI center -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 4.90367649294 degrees away from ROI center -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+
+<!-- Sources between [6.0,9.0) degrees of ROI center -->
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 8.69796499388 degrees away from ROI center -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 7.05157556672 degrees away from ROI center -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+
+<!-- Sources between [9.0,12.0) degrees of ROI center -->
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 11.9595127384 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 11.1069979696 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+
+<!-- Sources between [12.0,15.0] degrees of ROI center -->
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 12.6234325396 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 14.7456710858 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 12.4690426752 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 14.146888072 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 12.4422421643 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 14.1977725769 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 14.6005412595 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 12.0587326868 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 13.6574071666 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum type=>
+	<!-- Source is 13.8357340157 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+
+<!-- Diffuse Sources -->
+<source name= type=>
+	<spectrum type=>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel file= type=>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+<source name= type=>
+	<spectrum file= type=>
+		<parameter free= max= min= name= scale= value=/>
+	</spectrum>
+	<spatialModel type=>
+		<parameter free= max= min= name= scale= value=/>
+	</spatialModel>
+</source>
+</source_library>

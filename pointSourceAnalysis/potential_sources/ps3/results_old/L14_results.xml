@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<source_library title="source library">
+  <source name="_2FGLJ0534.5+2201" type="PointSource">
+    <spectrum type="PLSuperExpCutoff">
+      <parameter error="0.0004571511933" free="1" max="10000" min="0.0001" name="Prefactor" scale="1e-09" value="0.0002516830618" />
+      <parameter error="0.3025216971" free="1" max="5" min="0" name="Index1" scale="-1" value="0.5255477616" />
+      <parameter free="0" max="500000" min="30" name="Scale" scale="1" value="485.021271" />
+      <parameter error="218.0775636" free="1" max="100000" min="100" name="Cutoff" scale="1" value="99999.70266" />
+      <parameter free="0" max="5" min="0" name="Index2" scale="1" value="1" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter free="0" max="360" min="-360" name="RA" scale="1" value="83.6315" />
+      <parameter free="0" max="90" min="-90" name="DEC" scale="1" value="22.0196" />
+    </spatialModel>
+  </source>
+</source_library>

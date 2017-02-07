@@ -1,0 +1,26 @@
+#!/bin/sh
+#Source is J2323.8+4212 with significance peak of 7.123933
+evfile='lat_final_2FGL.fits'
+scfile='./spacecraft/spacecraft.fits'
+outfile1='lat_ltcube_2FGL.fits'
+outfile2='lat_expmap_2FGL.fits'
+
+irfs='P7REP_SOURCE_V15'
+srcmdl='srcModel.xml'
+cp $evfile $evfile'_copy'
+gtltcube evfile=$evfile scfile=$scfile outfile=$outfile1 dcostheta=0.025 binsz=1
+#The last two variables are confusing
+echo Live-time cube complete.
+
+gtexpmap evfile=$evfile scfile=$scfile expcube=$outfile1 outfile=$outfile2 irfs=$irfs srcrad=30 nlong=120 nlat=120 nenergies=20
+#The last three variables are confusing
+echo Exposure map complete.
+
+#The next thing changes the evfile so make a copy.
+gtdiffrsp evfile=$evfile scfile=$scfile srcmdl=$srcmdl irfs=$irfs
+
+echo Diffuse reponse complete.
+
+gtlike irfs=$irfs expcube=$outfile1 srcmdl=$srcmdl statistic=UNBINNED optimizer=MINUIT evfile=$evfile scfile=$scfile expmap=$outfile2
+
+echo UNBINNDED LIKELIHOOD ANALYSIS COMPLETE!

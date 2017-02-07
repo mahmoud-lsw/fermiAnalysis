@@ -1,0 +1,13 @@
+#!/bin/sh
+
+
+for i in {1..10}
+do
+	modFile='lat_MOD_final_100_1deg_plane'$i'.fits'
+
+	outfile='lat_MOD_binned3600_100GeV_1deg_plane'$i'.fits'
+
+	gtbin algorithm=CMAP evfile=$modFile outfile=$outfile scfile=spacecraft.fits nxpix=3600 nypix=3600 binsz=0.1 xref=0 yref=0 axisrot=0 proj=AIT coordsys=GAL
+done
+
+echo 'All Done!!!!!'

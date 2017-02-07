@@ -1,0 +1,1 @@
+/home/james/fermidata/pointSourceAnalysis/potential_sources_2.0/AitoffMap.py

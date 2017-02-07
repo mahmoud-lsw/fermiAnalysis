@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+<source_library title="source library">
+  <source name="PS7 - NP3" type="PointSource">
+    <spectrum type="PowerLaw">
+      <parameter error="1.836169969" free="1" max="10000" min="0.0001" name="Prefactor" scale="1e-14" value="0.3710788542" />
+      <parameter error="0.3437951316" free="1" max="5" min="0" name="Index" scale="-1" value="1.328206986" />
+      <parameter error="23009.46086" free="1" max="500000" min="30" name="Scale" scale="1" value="6183.669377" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter free="0" max="360" min="-360" name="RA" scale="1" value="347.3102" />
+      <parameter free="0" max="90" min="-90" name="DEC" scale="1" value="54.43288" />
+    </spatialModel>
+  </source>
+  <source name="gll_iem_v05_rev1" type="DiffuseSource">
+    <spectrum type="PowerLaw">
+      <parameter error="0.03648490816" free="1" max="10" min="0" name="Prefactor" scale="1" value="1.253841719" />
+      <parameter free="0" max="1" min="-1" name="Index" scale="1" value="0" />
+      <parameter free="0" max="200" min="50" name="Scale" scale="1" value="100" />
+    </spectrum>
+    <spatialModel file="../model/gll_iem_v05_rev1.fit" type="MapCubeFunction">
+      <parameter free="0" max="1000" min="0.001" name="Normalization" scale="1" value="1" />
+    </spatialModel>
+  </source>
+</source_library>

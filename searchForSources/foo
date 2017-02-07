@@ -1,0 +1,1 @@
+gtbin algorithm=CMAP evfile=lat_ultraclean_100GeV.fits outfile=lat_binned3600_uclean100GeV.fits scfile=./spacecraft/spacecraft.fits nxpix=3600 nypix=3600 binsz=0.1 xref=0 yref=0 axisrot=0 proj=AIT coordsys=GAL

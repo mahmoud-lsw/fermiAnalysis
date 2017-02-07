@@ -1,0 +1,214 @@
+<?xml version="1.0" ?>
+<source_library title="source library">
+
+<!-- Point Sources -->
+
+<!-- Sources between [0.0,2.0) degrees of ROI center -->
+<source name="_2FGLJ1121.0+4211" type="PointSource">
+	<spectrum type="PowerLaw">
+	<!-- Source is 0.131040875077 degrees away from ROI center -->
+		<parameter free="1" max="1e4" min="1e-4" name="Prefactor" scale="1e-14" value="8.85556344509"/>
+		<parameter free="1" max="5.0" min="0.0" name="Index" scale="-1.0" value="1.60611"/>
+		<parameter free="0" max="5e5" min="30" name="Scale" scale="1.0" value="3795.944336"/>
+	</spectrum>
+	<spatialModel type="SkyDirFunction">
+		<parameter free="0" max="360.0" min="-360.0" name="RA" scale="1.0" value="170.261"/>
+		<parameter free="0" max="90" min="-90" name="DEC" scale="1.0" value="42.186"/>
+	</spatialModel>
+</source>
+
+<!-- Sources between [2.0,4.0) degrees of ROI center -->
+
+<!-- Sources between [4.0,6.0) degrees of ROI center -->
+<source name="_2FGLJ1100.9+4014" type="PointSource">
+	<spectrum type="PowerLaw">
+	<!-- Source is 4.18940273117 degrees away from ROI center -->
+		<parameter free="1" max="1e4" min="1e-4" name="Prefactor" scale="1e-14" value="2.39013673355"/>
+		<parameter free="1" max="5.0" min="0.0" name="Index" scale="-1.0" value="1.60243"/>
+		<parameter free="0" max="5e5" min="30" name="Scale" scale="1.0" value="5512.900391"/>
+	</spectrum>
+	<spatialModel type="SkyDirFunction">
+		<parameter free="0" max="360.0" min="-360.0" name="RA" scale="1.0" value="165.233"/>
+		<parameter free="0" max="90" min="-90" name="DEC" scale="1.0" value="40.2469"/>
+	</spatialModel>
+</source>
+<source name="_2FGLJ1104.4+3812" type="PointSource">
+	<spectrum type="PowerLaw">
+	<!-- Source is 5.07047794731 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free="0" max="1e4" min="1e-4" name="Prefactor" scale="1e-11" value="1.80167009783"/>
+		<parameter free="0" max="5.0" min="0.0" name="Index" scale="-1.0" value="1.77058"/>
+		<parameter free="0" max="5e5" min="30" name="Scale" scale="1.0" value="1162.356445"/>
+	</spectrum>
+	<spatialModel type="SkyDirFunction">
+		<parameter free="0" max="360.0" min="-360.0" name="RA" scale="1.0" value="166.12"/>
+		<parameter free="0" max="90" min="-90" name="DEC" scale="1.0" value="38.2134"/>
+	</spatialModel>
+</source>
+<source name="_2FGLJ1129.5+3758" type="PointSource">
+	<spectrum type="PowerLaw">
+	<!-- Source is 4.62750150908 degrees away from ROI center -->
+		<parameter free="1" max="1e4" min="1e-4" name="Prefactor" scale="1e-12" value="1.30402036825"/>
+		<parameter free="1" max="5.0" min="0.0" name="Index" scale="-1.0" value="2.25765"/>
+		<parameter free="0" max="5e5" min="30" name="Scale" scale="1.0" value="987.509277"/>
+	</spectrum>
+	<spatialModel type="SkyDirFunction">
+		<parameter free="0" max="360.0" min="-360.0" name="RA" scale="1.0" value="172.379"/>
+		<parameter free="0" max="90" min="-90" name="DEC" scale="1.0" value="37.9707"/>
+	</spatialModel>
+</source>
+<source name="_2FGLJ1146.9+4000" type="PointSource">
+	<spectrum type="PowerLaw">
+	<!-- Source is 5.47005634115 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free="0" max="1e4" min="1e-4" name="Prefactor" scale="1e-12" value="8.89581290575"/>
+		<parameter free="0" max="5.0" min="0.0" name="Index" scale="-1.0" value="2.35333"/>
+		<parameter free="0" max="5e5" min="30" name="Scale" scale="1.0" value="608.710754"/>
+	</spectrum>
+	<spatialModel type="SkyDirFunction">
+		<parameter free="0" max="360.0" min="-360.0" name="RA" scale="1.0" value="176.737"/>
+		<parameter free="0" max="90" min="-90" name="DEC" scale="1.0" value="40.006"/>
+	</spatialModel>
+</source>
+<source name="_2FGLJ1150.5+4154" type="PointSource">
+	<spectrum type="PowerLaw">
+	<!-- Source is 5.58466266351 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free="0" max="1e4" min="1e-4" name="Prefactor" scale="1e-13" value="3.97478111622"/>
+		<parameter free="0" max="5.0" min="0.0" name="Index" scale="-1.0" value="1.75606"/>
+		<parameter free="0" max="5e5" min="30" name="Scale" scale="1.0" value="2318.402100"/>
+	</spectrum>
+	<spatialModel type="SkyDirFunction">
+		<parameter free="0" max="360.0" min="-360.0" name="RA" scale="1.0" value="177.631"/>
+		<parameter free="0" max="90" min="-90" name="DEC" scale="1.0" value="41.9098"/>
+	</spatialModel>
+</source>
+
+<!-- Sources between [6.0,8.0) degrees of ROI center -->
+<source name="_2FGLJ1051.3+3938" type="PointSource">
+	<spectrum type="PowerLaw">
+	<!-- Source is 6.09143838447 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free="0" max="1e4" min="1e-4" name="Prefactor" scale="1e-14" value="1.2592328913"/>
+		<parameter free="0" max="5.0" min="0.0" name="Index" scale="-1.0" value="1.55786"/>
+		<parameter free="0" max="5e5" min="30" name="Scale" scale="1.0" value="5600.393066"/>
+	</spectrum>
+	<spatialModel type="SkyDirFunction">
+		<parameter free="0" max="360.0" min="-360.0" name="RA" scale="1.0" value="162.831"/>
+		<parameter free="0" max="90" min="-90" name="DEC" scale="1.0" value="39.6468"/>
+	</spatialModel>
+</source>
+<source name="_2FGLJ1112.4+3450" type="PointSource">
+	<spectrum type="PowerLaw">
+	<!-- Source is 7.57845121999 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free="0" max="1e4" min="1e-4" name="Prefactor" scale="1e-12" value="6.86934753871"/>
+		<parameter free="0" max="5.0" min="0.0" name="Index" scale="-1.0" value="2.36664"/>
+		<parameter free="0" max="5e5" min="30" name="Scale" scale="1.0" value="630.005188"/>
+	</spectrum>
+	<spatialModel type="SkyDirFunction">
+		<parameter free="0" max="360.0" min="-360.0" name="RA" scale="1.0" value="168.108"/>
+		<parameter free="0" max="90" min="-90" name="DEC" scale="1.0" value="34.8496"/>
+	</spatialModel>
+</source>
+<source name="_2FGLJ1125.2+4933" type="PointSource">
+	<spectrum type="PowerLaw">
+	<!-- Source is 7.33650387257 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free="0" max="1e4" min="1e-4" name="Prefactor" scale="1e-14" value="2.19553023629"/>
+		<parameter free="0" max="5.0" min="0.0" name="Index" scale="-1.0" value="1.88272"/>
+		<parameter free="0" max="5e5" min="30" name="Scale" scale="1.0" value="3641.584717"/>
+	</spectrum>
+	<spatialModel type="SkyDirFunction">
+		<parameter free="0" max="360.0" min="-360.0" name="RA" scale="1.0" value="171.317"/>
+		<parameter free="0" max="90" min="-90" name="DEC" scale="1.0" value="49.553"/>
+	</spatialModel>
+</source>
+<source name="_2FGLJ1127.6+3622" type="PointSource">
+	<spectrum type="PowerLaw">
+	<!-- Source is 6.05352469459 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free="0" max="1e4" min="1e-4" name="Prefactor" scale="1e-13" value="5.66400984274"/>
+		<parameter free="0" max="5.0" min="0.0" name="Index" scale="-1.0" value="2.23618"/>
+		<parameter free="0" max="5e5" min="30" name="Scale" scale="1.0" value="1234.156738"/>
+	</spectrum>
+	<spatialModel type="SkyDirFunction">
+		<parameter free="0" max="360.0" min="-360.0" name="RA" scale="1.0" value="171.908"/>
+		<parameter free="0" max="90" min="-90" name="DEC" scale="1.0" value="36.3701"/>
+	</spatialModel>
+</source>
+
+<!-- Sources between [8.0,10.0] degrees of ROI center -->
+<source name="_2FGLJ1033.2+4117" type="PointSource">
+	<spectrum type="PowerLaw">
+	<!-- Source is 8.86040752711 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free="0" max="1e4" min="1e-4" name="Prefactor" scale="1e-12" value="5.56609792979"/>
+		<parameter free="0" max="5.0" min="0.0" name="Index" scale="-1.0" value="2.44369"/>
+		<parameter free="0" max="5e5" min="30" name="Scale" scale="1.0" value="605.685364"/>
+	</spectrum>
+	<spatialModel type="SkyDirFunction">
+		<parameter free="0" max="360.0" min="-360.0" name="RA" scale="1.0" value="158.3"/>
+		<parameter free="0" max="90" min="-90" name="DEC" scale="1.0" value="41.2862"/>
+	</spatialModel>
+</source>
+<source name="_2FGLJ1053.6+4928" type="PointSource">
+	<spectrum type="PowerLaw">
+	<!-- Source is 8.57976330558 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free="0" max="1e4" min="1e-4" name="Prefactor" scale="1e-14" value="9.26320787653"/>
+		<parameter free="0" max="5.0" min="0.0" name="Index" scale="-1.0" value="1.7465"/>
+		<parameter free="0" max="5e5" min="30" name="Scale" scale="1.0" value="3197.744141"/>
+	</spectrum>
+	<spatialModel type="SkyDirFunction">
+		<parameter free="0" max="360.0" min="-360.0" name="RA" scale="1.0" value="163.417"/>
+		<parameter free="0" max="90" min="-90" name="DEC" scale="1.0" value="49.4726"/>
+	</spatialModel>
+</source>
+<source name="_2FGLJ1153.2+4935" type="PointSource">
+	<spectrum type="PowerLaw">
+	<!-- Source is 9.27403554751 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free="0" max="1e4" min="1e-4" name="Prefactor" scale="1e-12" value="5.85323413002"/>
+		<parameter free="0" max="5.0" min="0.0" name="Index" scale="-1.0" value="2.52457"/>
+		<parameter free="0" max="5e5" min="30" name="Scale" scale="1.0" value="528.080872"/>
+	</spectrum>
+	<spatialModel type="SkyDirFunction">
+		<parameter free="0" max="360.0" min="-360.0" name="RA" scale="1.0" value="178.305"/>
+		<parameter free="0" max="90" min="-90" name="DEC" scale="1.0" value="49.5991"/>
+	</spatialModel>
+</source>
+<source name="_2FGLJ1209.6+4121" type="PointSource">
+	<spectrum type="PowerLaw">
+	<!-- Source is 9.19324425529 degrees away from ROI center -->
+	<!-- Source is outside ROI, all parameters should remain fixed -->
+		<parameter free="0" max="1e4" min="1e-4" name="Prefactor" scale="1e-14" value="2.21992918975"/>
+		<parameter free="0" max="5.0" min="0.0" name="Index" scale="-1.0" value="1.57735"/>
+		<parameter free="0" max="5e5" min="30" name="Scale" scale="1.0" value="4818.044922"/>
+	</spectrum>
+	<spatialModel type="SkyDirFunction">
+		<parameter free="0" max="360.0" min="-360.0" name="RA" scale="1.0" value="182.403"/>
+		<parameter free="0" max="90" min="-90" name="DEC" scale="1.0" value="41.3535"/>
+	</spatialModel>
+</source>
+
+<!-- Diffuse Sources -->
+<source name="gll_iem_v05_rev1" type="DiffuseSource">
+	<spectrum type="PowerLaw">
+		<parameter free="1" max="10" min="0" name="Prefactor" scale="1" value="1"/>
+		<parameter free="0" max="1" min="-1" name="Index" scale="1.0" value="0"/>
+		<parameter free="0" max="2e2" min="5e1" name="Scale" scale="1.0" value="1e2"/>
+	</spectrum>
+	<spatialModel file="../model/gll_iem_v05_rev1.fit" type="MapCubeFunction">
+		<parameter free="0" max="1e3" min="1e-3" name="Normalization" scale="1.0" value="1.0"/>
+	</spatialModel>
+</source>
+<source name="iso_source_v05_rev1" type="DiffuseSource">
+	<spectrum file="../model/iso_source_v05_rev1.txt" type="FileFunction">
+		<parameter free="1" max="10" min="1e-2" name="Normalization" scale="1" value="1"/>
+	</spectrum>
+	<spatialModel type="ConstantValue">
+		<parameter free="0" max="10.0" min="0.0" name="Value" scale="1.0" value="1.0"/>
+	</spatialModel>
+</source>
+</source_library>

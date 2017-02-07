@@ -1,0 +1,10 @@
+global color=white
+fk5;point(350.678700,34.590420)# point=cross text={++PS1-NP3}
+fk5;point(138.296500,-21.059710)# point=cross text={++PS2-NP4}
+fk5;point(85.972430,-55.502020)# point=cross text={++PS4-NP4}
+fk5;point(32.455320,-52.515270)# point=cross text={++PS5-NP3}
+fk5;point(90.065700,12.761580)# point=cross text={PS6-NP3}
+fk5;point(347.310200,54.432880)# point=cross text={PS7-NP3}
+fk5;point(306.384500,76.780020)# point=cross text={PS8-NP3}
+fk5;point(17.546920,68.096180)# point=cross text={++PS9-NP3}
+fk5;point(170.118700,42.263760)# point=cross text={++PS10-NP3}

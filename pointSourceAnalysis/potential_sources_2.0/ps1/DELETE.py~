@@ -1,0 +1,24 @@
+os.system("cat "+modelFile_TSMap+" > "+modelFile_TSMap_noSource)
+
+# First find minimum source Name
+
+minROI=9999		# Arbitrarily large number
+import re
+with open(modelFile_TSMap_noSource, 'r') as inF:
+	for line in inF:
+		if "<!-- Diffuse Sources -->" in line:
+			break
+		if "<source name=" in line:		
+			currentName= re.findall('<source name=\"(.*?)"', line)[0]
+
+		if "degrees away from ROI center -->" in line:
+			currentROI=float(re.findall("Source is (.*?) degrees", line)[0])
+#
+		# Check if minimum
+		if "</source>" in line and currentROI<minROI:
+			minName=currentName			
+			minROI=currentROI
+# Now delete it!
+#os.system('''sed '/%s/,/</source>/d' %s''' %(minName,modelFile_TSMap_noSource))
+
+os.system('''sed '/_2FGLJ2322.6+3435/,/source>/d' ./results/L14_TSMap_noSource.xml''')

@@ -1,0 +1,65 @@
+<?xml version="1.0" standalone="no"?>
+<source_library title="source library">
+  <source name="_2FGLJ1800.5+7829" type="PointSource">
+    <spectrum type="PowerLaw">
+      <parameter free="0" max="10000" min="0.0001" name="Prefactor" scale="1e-11" value="1.359731338" />
+      <parameter free="0" max="5" min="0" name="Index" scale="-1" value="2.23057" />
+      <parameter free="0" max="500000" min="30" name="Scale" scale="1" value="665.466064" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter free="0" max="360" min="-360" name="RA" scale="1" value="270.147" />
+      <parameter free="0" max="90" min="-90" name="DEC" scale="1" value="78.4834" />
+    </spatialModel>
+  </source>
+  <source name="_2FGLJ2004.5+7754" type="PointSource">
+    <spectrum type="PowerLaw">
+      <parameter error="0.07883021599" free="1" max="10000" min="0.0001" name="Prefactor" scale="1e-12" value="1.865084881" />
+      <parameter error="0.03298891494" free="1" max="5" min="0" name="Index" scale="-1" value="2.179886155" />
+      <parameter free="0" max="500000" min="30" name="Scale" scale="1" value="1095.885254" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter free="0" max="360" min="-360" name="RA" scale="1" value="301.129" />
+      <parameter free="0" max="90" min="-90" name="DEC" scale="1" value="77.9163" />
+    </spatialModel>
+  </source>
+  <source name="_2FGLJ2009.7+7225" type="PointSource">
+    <spectrum type="PowerLaw">
+      <parameter error="0.1142216094" free="1" max="10000" min="0.0001" name="Prefactor" scale="1e-12" value="2.131973366" />
+      <parameter error="0.04071985015" free="1" max="5" min="0" name="Index" scale="-1" value="2.407497598" />
+      <parameter free="0" max="500000" min="30" name="Scale" scale="1" value="954.117371" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter free="0" max="360" min="-360" name="RA" scale="1" value="302.437" />
+      <parameter free="0" max="90" min="-90" name="DEC" scale="1" value="72.418" />
+    </spatialModel>
+  </source>
+  <source name="_2FGLJ2022.5+7614" type="PointSource">
+    <spectrum type="PowerLaw">
+      <parameter error="0.1542274059" free="1" max="10000" min="0.0001" name="Prefactor" scale="1e-12" value="2.816444987" />
+      <parameter error="0.04227852095" free="1" max="5" min="0" name="Index" scale="-1" value="2.246356033" />
+      <parameter free="0" max="500000" min="30" name="Scale" scale="1" value="810.613525" />
+    </spectrum>
+    <spatialModel type="SkyDirFunction">
+      <parameter free="0" max="360" min="-360" name="RA" scale="1" value="305.636" />
+      <parameter free="0" max="90" min="-90" name="DEC" scale="1" value="76.2431" />
+    </spatialModel>
+  </source>
+  <source name="gll_iem_v05_rev1" type="DiffuseSource">
+    <spectrum type="PowerLaw">
+      <parameter error="0.005173183488" free="1" max="10" min="0" name="Prefactor" scale="1" value="0.8880576588" />
+      <parameter free="0" max="1" min="-1" name="Index" scale="1" value="0" />
+      <parameter free="0" max="200" min="50" name="Scale" scale="1" value="100" />
+    </spectrum>
+    <spatialModel file="../model/gll_iem_v05_rev1.fit" type="MapCubeFunction">
+      <parameter free="0" max="1000" min="0.001" name="Normalization" scale="1" value="1" />
+    </spatialModel>
+  </source>
+  <source name="iso_source_v05_rev1" type="DiffuseSource">
+    <spectrum file="../model/iso_source_v05_rev1.txt" type="FileFunction">
+      <parameter error="0.01577789872" free="1" max="10" min="0.01" name="Normalization" scale="1" value="0.7985531566" />
+    </spectrum>
+    <spatialModel type="ConstantValue">
+      <parameter free="0" max="10" min="0" name="Value" scale="1" value="1" />
+    </spatialModel>
+  </source>
+</source_library>
